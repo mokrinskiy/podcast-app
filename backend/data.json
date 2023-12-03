@@ -1,0 +1,292 @@
+[
+    {
+        "model": "api.category",
+        "pk": 1,
+        "fields": {
+            "name": "Culture"
+        }
+    },
+    {
+        "model": "api.category",
+        "pk": 2,
+        "fields": {
+            "name": "Cinema"
+        }
+    },
+    {
+        "model": "api.category",
+        "pk": 3,
+        "fields": {
+            "name": "Books"
+        }
+    },
+    {
+        "model": "api.category",
+        "pk": 4,
+        "fields": {
+            "name": "Music"
+        }
+    },
+    {
+        "model": "api.category",
+        "pk": 5,
+        "fields": {
+            "name": "Technology"
+        }
+    },
+    {
+        "model": "api.category",
+        "pk": 6,
+        "fields": {
+            "name": "Psychology"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 1,
+        "fields": {
+            "name": "Катя Положенцева"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 2,
+        "fields": {
+            "name": "Камилла Лысенко"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 3,
+        "fields": {
+            "name": "Дом культуры «Ясная Поляна»"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 4,
+        "fields": {
+            "name": "Антон Долин"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 5,
+        "fields": {
+            "name": "Александр Филимонов"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 6,
+        "fields": {
+            "name": "Никита Северин"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 7,
+        "fields": {
+            "name": "Иван Авраменко и Данил Махов"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 8,
+        "fields": {
+            "name": "Лев Оборин"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 9,
+        "fields": {
+            "name": "Игорь Кириенков"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 10,
+        "fields": {
+            "name": "Николай Меркульев"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 11,
+        "fields": {
+            "name": "Григорий Насонов"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 12,
+        "fields": {
+            "name": "Екатерина Меньшикова и Денис Шалдин"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 13,
+        "fields": {
+            "name": "Саша Мемус"
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 14,
+        "fields": {
+            "name": "Елизавета Филоненко"
+        }
+    },
+    {
+        "model": "api.podcast",
+        "pk": 1,
+        "fields": {
+            "title": "Музей-усадьба «Ясная Поляна»",
+            "description": "Подкаст музея-усадьбы «Ясная Поляна».",
+            "language": "Russian",
+            "duration": "00:19:00",
+            "release_date": "2023-08-15",
+            "url": "https://mavecloud.s3mts.ru/storage/podcasts/4e3be988-c905-48c4-9826-dbc7a94beb06/episodes/e652065c-027b-4d6a-af1b-a6bcf07de697.mp3",
+            "image": "http://127.0.0.1:8000/podcast_images/yasnaya-polyana2x.webp",
+            "category": [1, 3],
+            "author": [3]
+        }
+    },
+    {
+        "model": "api.podcast",
+        "pk": 2,
+        "fields": {
+            "title": "Арт-вопрос",
+            "description": "Каждую неделю журналист и создатель онлайн-галереи OilyOil.com Катя Положенцева в студии Глаголев.fm обсуждает с приглашённым гостем мир современного искусства.",
+            "language": "Russian",
+            "duration": "00:34:00",
+            "release_date": "2023-11-28",
+            "url": "https://cdn.transistor.fm/file/transistor/m/shows/7236/9a5cee9f52628f78fe2c6c3a6f0cf37d.mp3",
+            "image": "http://127.0.0.1:8000/podcast_images/artquestion2x.webp",
+            "category": [1],
+            "author": [1]
+        }
+    },
+    {
+        "model": "api.podcast",
+        "pk": 5,
+        "fields": {
+            "title": "Выживут только айтишники",
+            "description": "Подкаст о том, как живёт и развивается IT-индустрия в России. Может ли Россия стать айти-державой, почему UX/UI дизайнеры — серые кардиналы любого продукта и как гуманитарии двигают айти-сферу вперед не хуже программистов. Ответы на эти вопросы ищет Никита Северин.",
+            "language": "Russian",
+            "duration": "00:54:00",
+            "release_date": "2023-12-02",
+            "url": "https://redbarn.ru/wp-content/uploads/2023/11/vyzhivut_tolko_ajtishniki_-_davat_dobro_kak_it_spetsialisty_podderzhivayut.mp3",
+            "image": "http://127.0.0.1:8000/podcast_images/vyzhivut-tol-ko-ajtishniki2x.webp",
+            "category": [5],
+            "author": [6]
+        }
+    },
+    {
+        "model": "api.podcast",
+        "pk": 6,
+        "fields": {
+            "title": "Кверти",
+            "description": "Специалист по кибербезопасности и человек с лёгкой паранойей объясняют, как противостоять интернет-мошенникам и не стать жертвой злыдней-кибержуликов.",
+            "language": "Russian",
+            "duration": "00:46:00",
+            "release_date": "2023-12-20",
+            "url": "https://redbarn.ru/wp-content/uploads/2023/11/6-vypusk-audio.mp3",
+            "image": "http://127.0.0.1:8000/podcast_images/kverti2x.webp",
+            "category": [5],
+            "author": [7]
+        }
+    },
+    {
+        "model": "api.podcast",
+        "pk": 7,
+        "fields": {
+            "title": "Между строк",
+            "description": "«Между строк» — подкаст о русской поэзии. Один выпуск — одно великое стихотворение. Поэт, критик и редактор проекта «Полка» Лев Оборин приглашает в студию интересных собеседников — филологов, поэтов, преподавателей, — чтобы поговорить о классических и современных текстах, без которых нельзя себе представить русскую поэзию.",
+            "language": "Russian",
+            "duration": "00:43:00",
+            "release_date": "2023-12-02",
+            "url": "https://cdn.simplecast.com/audio/e2ed2f95-4a48-4891-be69-e9eceb5f6caf/episodes/b8d72bb9-d4c9-40fd-8ad0-a7f917e280e1/audio/43916c45-d55c-49f0-ae5d-40f2cc0965ce/default_tc.mp3?aid=rss_feed&feed=Rs9zGK43",
+            "image": "http://127.0.0.1:8000/podcast_images/mezhdustrok2x.webp",
+            "category": [3],
+            "author": [8]
+        }
+    },
+    {
+        "model": "api.podcast",
+        "pk": 9,
+        "fields": {
+            "title": "Хороший текст",
+            "description": "Подкаст школы «Хороший текст» — это серия интервью с известными писателями, сценаристами и поэтами. Как понять, что литература — это твоё призвание? Что сегодня происходит с прозой и поэзией? Кто создает современный литературный ландшафт? Подкаст ведёт критик и редактор «Bookmate» Игорь Кириенков.",
+            "language": "Russian",
+            "duration": "00:12:00",
+            "release_date": "2023-12-25",
+            "url": "https://cdn.simplecast.com/audio/37dcd7/37dcd719-4c39-4d80-b672-57a9d358719a/1682d504-a2f0-46f2-bcb4-a6cfa297d4fe/bookmate-pavlova-1-2_tc.mp3?aid=rss_feed",
+            "image": "http://127.0.0.1:8000/podcast_images/goodtext2x_cRrpHEy.webp",
+            "category": [1, 3],
+            "author": [9]
+        }
+    },
+    {
+        "model": "api.podcast",
+        "pk": 10,
+        "fields": {
+            "title": "24fps",
+            "description": "Подкаст о видео для режиссёров, операторов, сценаристов, монтажеров, художников и других специалистов сферы видеопроизводства.",
+            "language": "Russian",
+            "duration": "01:51:00",
+            "release_date": "2023-07-11",
+            "url": "https://file2.podfm.ru/low/73/731/7311/73119/mp3/podfm_24fps_audio_7.mp3",
+            "image": "http://127.0.0.1:8000/podcast_images/twentyfourfps2x.webp",
+            "category": [2],
+            "author": [10]
+        }
+    },
+    {
+        "model": "api.podcast",
+        "pk": 11,
+        "fields": {
+            "title": "Всё в твоей голове",
+            "description": "Подкаст, в котором психолог-профайлер, специализирующийся на анализе поведения, проводит сессию с гостями и помогает им обернуть сложную жизненную ситуацию в позитивный жизненный опыт.",
+            "language": "Russian",
+            "duration": "00:52:00",
+            "release_date": "2023-10-23",
+            "url": "https://redbarn.ru/wp-content/uploads/2022/09/vsyo_v_tvoej_golove_-_ya_-_gruda_czvetnogo_stekla_kak_byt_esli.mp3",
+            "image": "http://127.0.0.1:8000/podcast_images/vse-v-tvoey-golove2x.webp",
+            "category": [6],
+            "author": [11]
+        }
+    },
+    {
+        "model": "api.podcast",
+        "pk": 12,
+        "fields": {
+            "title": "Мятный подкаст",
+            "description": "Подкаст о новой русской музыке.",
+            "language": "Russian",
+            "duration": "02:48:00",
+            "release_date": "2023-12-03",
+            "url": "https://podcast.radiomyata.ru/wp-content/uploads/2019/12/0f8c5dcc70740bd127c7180787791ef5.mp3",
+            "image": "http://127.0.0.1:8000/podcast_images/mint2x.webp",
+            "category": [4],
+            "author": [12]
+        }
+    },
+    {
+        "model": "api.podcast",
+        "pk": 13,
+        "fields": {
+            "title": "Психологический совет",
+            "description": "О психологии отношений с людьми и самим собой. Отношения родителей и детей, конфликты в семье, вопросы психологу и случаи из практики.",
+            "language": "Russian",
+            "duration": "00:44:00",
+            "release_date": "2023-12-30",
+            "url": "https://d3ctxlq1ktw2nl.cloudfront.net/staging/2022-3-4/257776950-44100-2-ed57228f72293.m4a",
+            "image": "http://127.0.0.1:8000/podcast_images/mamapapahelp2x.webp",
+            "category": [6],
+            "author": [13, 14]
+        }
+    }
+]
