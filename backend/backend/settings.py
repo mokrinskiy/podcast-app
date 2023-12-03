@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', '.now.sh']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -143,5 +143,5 @@ REST_FRAMEWORK = {
     ),
 }
 
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'podcast_images'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'podcast_images')
+MEDIA_URLS = '/podcast_images/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'podcast_images')
