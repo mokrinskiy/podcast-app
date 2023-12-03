@@ -145,3 +145,4 @@ REST_FRAMEWORK = {
 
 MEDIA_URLS = '/podcast_images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'podcast_images')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
