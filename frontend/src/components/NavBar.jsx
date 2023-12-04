@@ -8,7 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 const NavBar = () => {
     return (
         <>
-            <header className="flex px-4 max-xl:mx-4 pt-6 m-auto max-w-[1600px] items-center justify-between border-b-[2px] border-neutral py-2 max-sm:border-[0px] max-sm:fixed max-sm:top-0 max-sm:z-50">
+            <header className="flex px-4 max-xl:mx-4 pt-6 m-auto max-w-[1600px] items-center justify-between border-b-[2px] border-neutral py-2 max-sm:border-[0px] max-sm:fixed max-sm:top-[-20px] max-sm:left-[-28px] max-sm:z-50">
                 <Link to={"/"} className="font-bold text-[25px] max-sm:hidden">
                     EchoEnclave
                 </Link>

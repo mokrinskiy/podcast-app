@@ -2,9 +2,11 @@ import React from "react";
 import ItemCol from "../components/ItemCol";
 import { useData } from "../hooks/useData";
 import { Link } from "react-router-dom";
+import Loading from "../components/Loading";
+import ItemColSkeleton from "../components/Skeletons/ItemColSkeleton";
 
 const Home = () => {
-    const data = useData("random_podcasts/");
+    const { data, loading } = useData("random_podcasts/");
 
     return (
         <div className="px-4 m-auto max-w-[1600px] max-sm:mt-[80px]">
@@ -35,20 +37,24 @@ const Home = () => {
                         More...
                     </Link>
                 </div>
-                <div className="flex justify-center max-lg:flex-wrap items-stretch max-lg:space-y-4">
-                    {data.map((item) => (
-                        <ItemCol
-                            id={item.id}
-                            key={item.id}
-                            title={item.title}
-                            category={item.category}
-                            release_date={item.release_date}
-                            duration={item.duration}
-                            image={item.image}
-                            description={item.description}
-                        />
-                    ))}
-                </div>
+                {loading ? (
+                    <ItemColSkeleton />
+                ) : (
+                    <div className="flex justify-center max-lg:flex-wrap items-stretch max-lg:space-y-4">
+                        {data.map((item) => (
+                            <ItemCol
+                                id={item.id}
+                                key={item.id}
+                                title={item.title}
+                                category={item.category}
+                                release_date={item.release_date}
+                                duration={item.duration}
+                                image={item.image}
+                                description={item.description}
+                            />
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );

@@ -149,7 +149,7 @@
             "duration": "00:19:00",
             "release_date": "2023-08-15",
             "url": "https://mavecloud.s3mts.ru/storage/podcasts/4e3be988-c905-48c4-9826-dbc7a94beb06/episodes/e652065c-027b-4d6a-af1b-a6bcf07de697.mp3",
-            "image": "http://127.0.0.1:8000/podcast_images/yasnaya-polyana2x.webp",
+            "image": "podcast_images/yasnaya-polyana2x.webp",
             "category": [1, 3],
             "author": [3]
         }
@@ -164,7 +164,7 @@
             "duration": "00:34:00",
             "release_date": "2023-11-28",
             "url": "https://cdn.transistor.fm/file/transistor/m/shows/7236/9a5cee9f52628f78fe2c6c3a6f0cf37d.mp3",
-            "image": "http://127.0.0.1:8000/podcast_images/artquestion2x.webp",
+            "image": "podcast_images/artquestion2x.webp",
             "category": [1],
             "author": [1]
         }
@@ -179,7 +179,7 @@
             "duration": "00:54:00",
             "release_date": "2023-12-02",
             "url": "https://redbarn.ru/wp-content/uploads/2023/11/vyzhivut_tolko_ajtishniki_-_davat_dobro_kak_it_spetsialisty_podderzhivayut.mp3",
-            "image": "http://127.0.0.1:8000/podcast_images/vyzhivut-tol-ko-ajtishniki2x.webp",
+            "image": "podcast_images/vyzhivut-tol-ko-ajtishniki2x.webp",
             "category": [5],
             "author": [6]
         }
@@ -194,7 +194,7 @@
             "duration": "00:46:00",
             "release_date": "2023-12-20",
             "url": "https://redbarn.ru/wp-content/uploads/2023/11/6-vypusk-audio.mp3",
-            "image": "http://127.0.0.1:8000/podcast_images/kverti2x.webp",
+            "image": "podcast_images/kverti2x.webp",
             "category": [5],
             "author": [7]
         }
@@ -209,7 +209,7 @@
             "duration": "00:43:00",
             "release_date": "2023-12-02",
             "url": "https://cdn.simplecast.com/audio/e2ed2f95-4a48-4891-be69-e9eceb5f6caf/episodes/b8d72bb9-d4c9-40fd-8ad0-a7f917e280e1/audio/43916c45-d55c-49f0-ae5d-40f2cc0965ce/default_tc.mp3?aid=rss_feed&feed=Rs9zGK43",
-            "image": "http://127.0.0.1:8000/podcast_images/mezhdustrok2x.webp",
+            "image": "podcast_images/mezhdustrok2x.webp",
             "category": [3],
             "author": [8]
         }
@@ -224,7 +224,7 @@
             "duration": "00:12:00",
             "release_date": "2023-12-25",
             "url": "https://cdn.simplecast.com/audio/37dcd7/37dcd719-4c39-4d80-b672-57a9d358719a/1682d504-a2f0-46f2-bcb4-a6cfa297d4fe/bookmate-pavlova-1-2_tc.mp3?aid=rss_feed",
-            "image": "http://127.0.0.1:8000/podcast_images/goodtext2x_cRrpHEy.webp",
+            "image": "podcast_images/goodtext2x_cRrpHEy.webp",
             "category": [1, 3],
             "author": [9]
         }
@@ -239,7 +239,7 @@
             "duration": "01:51:00",
             "release_date": "2023-07-11",
             "url": "https://file2.podfm.ru/low/73/731/7311/73119/mp3/podfm_24fps_audio_7.mp3",
-            "image": "http://127.0.0.1:8000/podcast_images/twentyfourfps2x.webp",
+            "image": "podcast_images/twentyfourfps2x.webp",
             "category": [2],
             "author": [10]
         }
@@ -254,7 +254,7 @@
             "duration": "00:52:00",
             "release_date": "2023-10-23",
             "url": "https://redbarn.ru/wp-content/uploads/2022/09/vsyo_v_tvoej_golove_-_ya_-_gruda_czvetnogo_stekla_kak_byt_esli.mp3",
-            "image": "http://127.0.0.1:8000/podcast_images/vse-v-tvoey-golove2x.webp",
+            "image": "podcast_images/vse-v-tvoey-golove2x.webp",
             "category": [6],
             "author": [11]
         }
@@ -269,7 +269,7 @@
             "duration": "02:48:00",
             "release_date": "2023-12-03",
             "url": "https://podcast.radiomyata.ru/wp-content/uploads/2019/12/0f8c5dcc70740bd127c7180787791ef5.mp3",
-            "image": "http://127.0.0.1:8000/podcast_images/mint2x.webp",
+            "image": "podcast_images/mint2x.webp",
             "category": [4],
             "author": [12]
         }
@@ -284,7 +284,7 @@
             "duration": "00:44:00",
             "release_date": "2023-12-30",
             "url": "https://d3ctxlq1ktw2nl.cloudfront.net/staging/2022-3-4/257776950-44100-2-ed57228f72293.m4a",
-            "image": "http://127.0.0.1:8000/podcast_images/mamapapahelp2x.webp",
+            "image": "podcast_images/mamapapahelp2x.webp",
             "category": [6],
             "author": [13, 14]
         }

@@ -3,16 +3,19 @@ import axios from "axios";
 
 export function useData(url) {
     const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
+            setLoading(true);
             const response = await axios.get(
-                `http://127.0.0.1:8000/api/${url}`
+                `${import.meta.env.VITE_REACT_URL}${url}`
             );
             setData(response.data);
+            setLoading(false);
         };
         fetchData();
     }, [url]);
 
-    return data;
+    return { data, loading };
 }
