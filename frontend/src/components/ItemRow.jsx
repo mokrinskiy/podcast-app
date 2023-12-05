@@ -1,10 +1,17 @@
 import React from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ItemRow = ({ id, title, duration, release_date, image, index }) => {
     return (
-        <div className="py-10 flex justify-between max-lg:flex-col">
+        <motion.div
+            whileHover={{ opacity: 1, scale: 0.98 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            transition={{ duration: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="py-10 flex justify-between max-lg:flex-col"
+        >
             <div className="flex">
                 <p className="items-center flex pr-16 text-[20px] font-bold max-md:pr-8 max-sm:pr-4 max-md:text-[10px]">
                     {index < 10 ? `0${index}` : index}
@@ -43,7 +50,7 @@ const ItemRow = ({ id, title, duration, release_date, image, index }) => {
                     Listen <ArrowForwardIcon />
                 </Link>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

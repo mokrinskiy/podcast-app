@@ -2,8 +2,8 @@ import React from "react";
 import ItemCol from "../components/ItemCol";
 import { useData } from "../hooks/useData";
 import { Link } from "react-router-dom";
-import Loading from "../components/Loading";
 import ItemColSkeleton from "../components/Skeletons/ItemColSkeleton";
+import Marquee from "../components/Marquee";
 
 const Home = () => {
     const { data, loading } = useData("random_podcasts/");
@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div className="px-4 m-auto max-w-[1600px] max-sm:mt-[80px]">
             <div>
-                <div className="my-[100px] mb-[200px] flex justify-center items-center w-full h-[500px] max-md:h-[300px] flex-col">
+                <div className="my-[100px] mb-[150px] flex justify-center items-center w-full h-[500px] max-md:h-[300px] flex-col">
                     <h1 className="text-center uppercase font-bold text-[160px] max-lg:text-[100px] max-md:text-[40px]">
                         Your daily
                     </h1>
@@ -31,7 +31,13 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="my-2 flex justify-between items-center">
+                <Marquee>
+                    <span className="mx-4 text-xl text-base-100">
+                        Explore intriguing podcasts on EchoEnclave. Dive into
+                        diverse topics for quick, enjoyable listens
+                    </span>
+                </Marquee>
+                <div className="my-2 flex justify-between items-center mt-[50px]">
                     <h1 className=" text-[25px]">Let's listen</h1>
                     <Link to={"/podcasts"} className="btn">
                         More...

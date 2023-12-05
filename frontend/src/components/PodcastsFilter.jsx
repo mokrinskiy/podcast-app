@@ -1,6 +1,7 @@
 import React from "react";
 import { useData } from "../hooks/useData";
 import PodcastFilterSkeleton from "./Skeletons/PodcastFilterSkeleton";
+import { motion } from "framer-motion";
 
 const PodcastsFilter = ({ currentCat, setCat }) => {
     const { data, loading } = useData("categories/");
@@ -11,17 +12,21 @@ const PodcastsFilter = ({ currentCat, setCat }) => {
                 <PodcastFilterSkeleton />
             ) : (
                 <>
-                    <button
+                    <motion.button
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 1.3 }}
                         onClick={() => setCat("")}
                         className={`btn carousel-item max-md:btn-sm ${
                             currentCat == "" ? "btn-active" : "btn-outline"
                         }`}
                     >
                         Recent
-                    </button>
+                    </motion.button>
                     {data.map((cat) => (
-                        <button
+                        <motion.button
                             key={cat.id}
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 1.3 }}
                             value={cat.id}
                             onClick={(e) => setCat(e.target.value)}
                             disabled={cat.id == currentCat}
@@ -32,7 +37,7 @@ const PodcastsFilter = ({ currentCat, setCat }) => {
                             }`}
                         >
                             {cat.name}
-                        </button>
+                        </motion.button>
                     ))}
                 </>
             )}

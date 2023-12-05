@@ -27,7 +27,7 @@ const Podcast = () => {
                         </button>
                         <p className="uppercase bold text-[25px]">Podcast</p>
                     </div>
-                    <div className="m-auto max-w-[1400px] flex justify-between pt-4 max-xl:flex-col max-xl:items-center space-x-5">
+                    <div className="m-auto max-w-[1400px] flex justify-between pt-4 max-xl:flex-col max-xl:items-center xl:space-x-5">
                         <div className="flex flex-col">
                             <img
                                 className="w-[600px] h-[600px] max-md:w-[400px] max-md:h-[400px] max-sm:w-[350px] max-sm:h-[350px]"
