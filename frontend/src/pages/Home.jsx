@@ -1,9 +1,14 @@
 import React from "react";
-import ItemCol from "../components/ItemCol";
-import { useData } from "../hooks/useData";
 import { Link } from "react-router-dom";
+import { useData } from "../hooks/useData";
+
+import ItemCol from "../components/ItemCol";
 import ItemColSkeleton from "../components/Skeletons/ItemColSkeleton";
 import Marquee from "../components/Marquee";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import TelegramIcon from "@mui/icons-material/Telegram";
 
 const Home = () => {
     const { data, loading } = useData("random_podcasts/");
@@ -52,15 +57,41 @@ const Home = () => {
                                 id={item.id}
                                 key={item.id}
                                 title={item.title}
-                                category={item.category}
+                                category={item.category[0]}
                                 release_date={item.release_date}
                                 duration={item.duration}
+                                author={item.author[0]}
                                 image={item.image}
                                 description={item.description}
                             />
                         ))}
                     </div>
                 )}
+                <div className="flex mt-10 justify-around w-full h-[200px] items-center bg-base-200 max-md:flex-col">
+                    <h1 className="text-3xl">Contact us</h1>
+                    <div className="flex space-x-5 ">
+                        <Link>
+                            <TwitterIcon
+                                sx={{ width: "50px", height: "50px" }}
+                            />
+                        </Link>
+                        <Link>
+                            <InstagramIcon
+                                sx={{ width: "50px", height: "50px" }}
+                            />
+                        </Link>
+                        <Link>
+                            <AlternateEmailIcon
+                                sx={{ width: "50px", height: "50px" }}
+                            />
+                        </Link>
+                        <Link>
+                            <TelegramIcon
+                                sx={{ width: "50px", height: "50px" }}
+                            />
+                        </Link>
+                    </div>
+                </div>
             </div>
         </div>
     );

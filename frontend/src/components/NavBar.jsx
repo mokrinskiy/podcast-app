@@ -1,7 +1,7 @@
 import React from "react";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import TelegramIcon from "@mui/icons-material/Telegram";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -50,7 +50,7 @@ const NavBar = () => {
                                 <div className="space-x-3 flex justify-between items-center">
                                     <TwitterIcon />
                                     <InstagramIcon />
-                                    <YouTubeIcon />
+                                    <TelegramIcon />
                                 </div>
                             </li>
                         </ul>
@@ -63,7 +63,7 @@ const NavBar = () => {
                     <div className="space-x-3 flex justify-between items-center">
                         <TwitterIcon />
                         <InstagramIcon />
-                        <YouTubeIcon />
+                        <TelegramIcon />
                     </div>
                 </div>
             </header>

@@ -7,7 +7,7 @@ const PodcastsFilter = ({ currentCat, setCat }) => {
     const { data, loading } = useData("categories/");
 
     return (
-        <div className="carousel carousel-center p-4 space-x-4 w-full rounded-box">
+        <div className="flex flex-wrap p-4 w-full rounded-box">
             {loading ? (
                 <PodcastFilterSkeleton />
             ) : (
@@ -16,7 +16,7 @@ const PodcastsFilter = ({ currentCat, setCat }) => {
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.3 }}
                         onClick={() => setCat("")}
-                        className={`btn carousel-item max-md:btn-sm ${
+                        className={`btn carousel-item max-md:btn-sm mr-4 mt-2 ${
                             currentCat == "" ? "btn-active" : "btn-outline"
                         }`}
                     >
@@ -30,7 +30,7 @@ const PodcastsFilter = ({ currentCat, setCat }) => {
                             value={cat.id}
                             onClick={(e) => setCat(e.target.value)}
                             disabled={cat.id == currentCat}
-                            className={`btn carousel-item max-md:btn-sm ${
+                            className={`btn carousel-item max-md:btn-sm mr-4 mt-2 ${
                                 cat.id == currentCat
                                     ? "btn-active"
                                     : "btn-outline"

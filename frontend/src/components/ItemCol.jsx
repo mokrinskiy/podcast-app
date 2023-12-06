@@ -8,9 +8,11 @@ const ItemCol = ({
     duration,
     release_date,
     image,
+    category,
     description,
     author,
 }) => {
+    console.log(author, category);
     return (
         <motion.div
             whileHover={{ opacity: 1, scale: 0.9 }}
@@ -19,8 +21,8 @@ const ItemCol = ({
             <Link to={`podcast/${id}`}>
                 <div className="flex justify-between pb-4">
                     <p className="">{release_date}</p>
-                    <div className="rounded-2xl px-4 border-[1px] border-black font-light">
-                        some
+                    <div className="rounded-2xl px-4 border-[1px] border-black font-light text-[13px]">
+                        {category.name}
                     </div>
                 </div>
                 <div className="w-full h-0 pb-[100%] relative">
@@ -35,7 +37,8 @@ const ItemCol = ({
                         <p className="font-bold text-[25px]">{title}</p>
                         <p className="mt-6">{description}</p>
                     </div>
-                    <p className="py-4">Author 12312 Duration {duration} Min</p>
+                    <p className="py-2">Author: {author.name}</p>
+                    <p className="py-2">Duration: {duration} Min</p>
                 </div>
             </Link>
         </motion.div>
